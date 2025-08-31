@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff"/>
+      <stop offset="50%" stop-color="#b14bff"/>
+      <stop offset="100%" stop-color="#6a5cff"/>
+    </linearGradient>
+    <filter id="outerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur1"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background (optional). Remove or set opacity to 0 for transparent. -->
+  <rect x="0" y="0" width="512" height="512" fill="#0b0b16" opacity="0"/>
+
+  <!-- Neon briefcase group -->
+  <g stroke="url(#neonGradient)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Glow layer -->
+    <g filter="url(#outerGlow)" opacity="0.9">
+      <rect x="96" y="160" width="320" height="240" rx="28" ry="28" stroke-width="22"/>
+      <rect x="192" y="96" width="128" height="48" rx="12" ry="12" stroke-width="22"/>
+      <rect x="224" y="252" width="64" height="56" rx="10" ry="10" stroke-width="22"/>
+    </g>
+    <!-- Soft inner glow / main strokes -->
+    <g filter="url(#softGlow)">
+      <rect x="96" y="160" width="320" height="240" rx="28" ry="28" stroke-width="12"/>
+      <rect x="192" y="96" width="128" height="48" rx="12" ry="12" stroke-width="12"/>
+      <rect x="224" y="252" width="64" height="56" rx="10" ry="10" stroke-width="12"/>
+    </g>
+  </g>
+</svg>
