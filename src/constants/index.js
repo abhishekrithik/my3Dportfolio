@@ -270,7 +270,7 @@ export const workExperiences = [
     id: 1,
     name: "Zen Class Full Stack Developer Program",
     pos: 'HCL GUVI',
-    duration: '2024',
+    duration: '2024 – Present',
     title: `Gained hands-on expertise in React, Node.js, Express, and MongoDB with real-world deployments. Completed 50+ mini projects and 5+ MERN stack projects and continue to develop MERN stack applications.`,
     icon: "/assets/guvihcl.png",
     animation: 'victory',

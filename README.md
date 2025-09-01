@@ -12,6 +12,10 @@
   </div>
 
   <h3 align="center">My 3D Dev Portfolio</h3>
+
+Check out my live portfolio here:  
+👉 [MyPortfolio](https://my3-dportfolio-vert.vercel.app/)
+
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
